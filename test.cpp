@@ -9,9 +9,7 @@ using namespace std;
 
 int main()
 {
-    
-    keypad(stdscr, true);
-    getmaxyx(stdscr, row, col);
+    printf("\033[2J\033[1;1H");
     //usleep(1100000);
     return 0;
 }
