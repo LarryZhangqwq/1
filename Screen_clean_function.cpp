@@ -9,7 +9,14 @@ using namespace std;
 
 int main()
 {
-    printf("\033[2J\033[1;1H");
+	for( int i = 0; i < 20; i++ )
+	{
+		for( int j = 0; j < 20; j++ )
+			cout << 1 << " ";
+		cout <<endl;
+	}
+	usleep(100000);
+	printf("\033[2J\033[1;1H");
     //usleep(1100000);
     return 0;
 }
