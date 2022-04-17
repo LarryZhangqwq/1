@@ -9,14 +9,18 @@ using namespace std;
 
 int main()
 {
-	for( int i = 0; i < 20; i++ )
-	{
-		for( int j = 0; j < 20; j++ )
-			cout << 1 << " ";
-		cout <<endl;
-	}
-	usleep(100000);
-	printf("\033[2J\033[1;1H");
-    //usleep(1100000);
-    return 0;
+	for( int z = 0; z <= 1000; z++ )
+    {
+        for( int i = 0; i < 20; i++ )
+        {
+            for( int j = 0; j < 20; j++ )
+                printf( "%d ", z );
+            printf("\n");
+        }
+        usleep(200000);
+        printf("\033[2J\033[1;1H");
+        //usleep(1100000);
+
+    }
+   return 0;
 }
